@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+    <listeners>
+        <listener class-name="autotests.system.Monitoring"/>
+    </listeners>
+
+    <test thread-count="5" name="Annotations">
+        <classes>
+            <class name="autotests.FirstTest"/>
+            <class name="autotests.authorized.AuthorizedBase"/>
+            <class name="autotests.authorized.AuthorizedBase"/>
+            <class name="autotests.calendar.CalendarTest"/>
+            <class name="autotests.login.LoginNegativeTest"/>
+            <class name="autotests.login.LoginPositiveTest"></class>
+        </classes>
+    </test>
+</suite> <!-- Suite -->
